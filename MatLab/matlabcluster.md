@@ -1,4 +1,5 @@
 # How to set Matlab on your local machine and run jobs on Taco server
+Special thanks to @Kur1sutaru for testing and documentation!!
 
 ## Prerequisites
 
