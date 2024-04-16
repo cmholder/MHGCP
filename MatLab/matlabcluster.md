@@ -61,7 +61,7 @@ Use the links below to download the appropriate script bundle you need based on 
 
 
 
-Unzip this file [https://github.com/RCHENLAB/dry-lab-standard/blob/main/mhgcp-config-cluster.zip] on your Mac and put it your local MatLab path (for example, "~/Documents/MATLAB/mhgcp-config-cluster" for Mac or "%USERPROFILE%/Documents/MATLAB" for Windows)
+Unzip this file [https://bcmedu.sharepoint.com/:u:/r/sites/MHGCPUsersGroup2/Shared%20Documents/Documentation/mhgcp-config-cluster.zip?csf=1&web=1&e=YqtGiu] on your local computer and put it your local MatLab path (for example, "~/Documents/MATLAB/mhgcp-config-cluster" for Mac or "%USERPROFILE%/Documents/MATLAB" for Windows)
 
 
 Open MatLab and browse to that folder and open the clusterConfig.m file
