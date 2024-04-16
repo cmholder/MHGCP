@@ -3,9 +3,9 @@
 ## Prerequisites
 
 
--Your Matlab version must be R2024a or later.
--You must have the Matlab Parallel Computing Toolbox installed.  To see what toolboxes are installed, type the ver command in the Matlab command window.  You should see Parallel Computing Toolbox listed.
--You must ssh to the cluster at least once before trying to submit any jobs from Matlab.
+- Your Matlab version must be R2024a or later.
+- You must have the Matlab Parallel Computing Toolbox installed.  To see what toolboxes are installed, type the ver command in the Matlab command window.  You should see Parallel Computing Toolbox listed.
+- You must ssh to the cluster at least once before trying to submit any jobs from Matlab.
 
 
 ## Download Matlab from BCM 
