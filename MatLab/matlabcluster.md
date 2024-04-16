@@ -3,10 +3,9 @@
 ## Prerequisites
 
 
-Your Matlab version must be R2017a or later.
-You must have the Matlab Parallel Computing Toolbox installed.  To see what toolboxes are installed, type the ver command in the Matlab command window.  You should see Parallel Computing Toolbox listed.
-You must be connected to the ISU VPN in order to submit jobs from your desktop, regardless of whether you are on-campus or off-campus. (This is because the Matlab cluster integration tools do not support multi-factor authentication such as Okta.   The VPN connection helps enforce multi-factor authentication.)
-You must ssh to the cluster at least once before trying to submit any jobs from Matlab.
+-Your Matlab version must be R2024a or later.
+-You must have the Matlab Parallel Computing Toolbox installed.  To see what toolboxes are installed, type the ver command in the Matlab command window.  You should see Parallel Computing Toolbox listed.
+-You must ssh to the cluster at least once before trying to submit any jobs from Matlab.
 
 
 ## Download Matlab from BCM 
@@ -58,11 +57,11 @@ There is a separate cluster plugin script bundle for each cluster (Nova, Condo, 
 
 Use the links below to download the appropriate script bundle you need based on the cluster(s) you plan to use from the links below. 
 
-💻 For Mac users:
+💻 For Windows/Mac users:
 
 
 
-Unzip this file [https://github.com/RCHENLAB/dry-lab-standard/blob/main/mhgcp-config-cluster.zip] on your Mac and put it your local MatLab path (for example, "/Users/cristalvillalba/Documents/MATLAB/mhgcp-config-cluster"
+Unzip this file [https://github.com/RCHENLAB/dry-lab-standard/blob/main/mhgcp-config-cluster.zip] on your Mac and put it your local MatLab path (for example, "~/Documents/MATLAB/mhgcp-config-cluster" for Mac or "%USERPROFILE%/Documents/MATLAB" for Windows)
 
 
 Open MatLab and browse to that folder and open the clusterConfig.m file
@@ -73,15 +72,6 @@ Follow the instructions under the command window screen
 
 
 💃 💃 💃voilà💃💃💃
-
-
-
-
-💻 For windows users: 
-
-        **UNDER CONSTRUCTION** 🚧 👷‍♀️👷‍♀️
-
-
 
 
 
