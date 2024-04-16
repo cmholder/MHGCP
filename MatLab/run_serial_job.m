@@ -5,13 +5,13 @@
  
 
 % First initialize a cluster object based on an existing cluster profile.
-c = parcluster('mhgcp R2024a')   %DO NOT CHANGE THIS
+c = parcluster('mhgcp R2024a');   %DO NOT CHANGE THIS
 
  
 
 % Use the AdditionalProperties property of the cluster object to set job specific details:
 c.AdditionalProperties.NumNodes = 1;                           % Number of nodes requested 
-c.AdditionalProperties.MemUsage = '1G'                         % Memory per Node Units are (K|M|G|T)
+c.AdditionalProperties.MemUsage = '1G';                         % Memory per Node Units are (K|M|G|T)
 c.AdditionalProperties.ProcsPerNode = 1;                       % Number of processors per node.
 c.AdditionalProperties.QueueName = 'mhgcp';                    % Cluster partition (mhgcp|interactive|short|gpu)
 c.AdditionalProperties.WallTime = '2:00:00';                   % Max wall time DD-HH:MM:SS
@@ -36,7 +36,7 @@ tic
 % Also set the parameter AutoAddClientPath to false so that Matlab won't complain when paths on 
 % your desktop don't exist on the cluster compute nodes (this is expected and can be ignored).
 
-myjob = batch(c,'myscript','AutoAddClientPath',false)
+myjob = batch(c,'myscript','AutoAddClientPath',false);
 
  
 
