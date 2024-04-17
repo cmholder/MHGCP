@@ -69,11 +69,14 @@ c.AdditionalProperties.AdditionalSubmitArgs = '--job-name=MatLabJob';
 
 This option is used to pass in any additional job arguments.  At a minimum the ```--job-name=MatLabJob``` should be changed to something that is representative of your actual job request.  For users that work in multiple labs you can use this to pass in the ```--account=<lab>``` so that your jobs are allocated to the proper billing account.
 
+## Visualizing Results
+```
+% load the 'A' array (computed in mywave) from the results of job 'myjob':
+load(myjob,'A');
 
-
-
-
-
-
+%-- plot the results --%
+plot(A);
+```
+Simply replace these directives with those needed to show the results of your job.
 
 
