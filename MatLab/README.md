@@ -30,9 +30,8 @@ To install and Activate:
       4. Select the products you want to download and install. ***Be sure to slecet the Parallel Computing Toolbox***
       5. After downloading and installing your products, keep the Activate MATLAB checkbox selected and click Next.
       6. Follow the prompts to activate MATLAB.
-      
-      > [!TIP]
-      > The full install of MatLab takes about 22GB of space on your local computer.  It is recommended that you only install the modules that you need.
+> [!TIP]
+> The full install of MatLab takes about 22GB of space on your local computer.  It is recommended that you only install the modules that you need.
 
 
 ## Connect to Taco server
