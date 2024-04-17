@@ -66,8 +66,19 @@ Specifies the expected duration of the job.
 %    N is determined by Matlab.
 c.AdditionalProperties.AdditionalSubmitArgs = '--job-name=MatLabJob';
 ```
-
 This option is used to pass in any additional job arguments.  At a minimum the ```--job-name=MatLabJob``` should be changed to something that is representative of your actual job request.  For users that work in multiple labs you can use this to pass in the ```--account=<lab>``` so that your jobs are allocated to the proper billing account.
+
+## Running your script
+```
+% Below, submit a batch job that calls the 'mywave.m' script.
+% Also set the parameter AutoAddClientPath to false so that Matlab won't complain when paths on 
+% your desktop don't exist on the cluster compute nodes (this is expected and can be ignored).
+
+myjob = batch(c,'mywave','AutoAddClientPath',false);
+```
+Change the 'mywave' parameter to match the name of your MatLab script that you want to execute.  In this example we would execute a script called mywave.m.
+> [!WARNING]
+> Please note that the run_serial_job.m file MUST be in the same folder as the script you want to submit to the cluster.
 
 ## Visualizing Results
 ```
