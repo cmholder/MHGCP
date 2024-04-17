@@ -5,13 +5,13 @@
 - You must be on the BCM campus network, WiFi, or VPN
 - Your lab must have a subscription to the Taco Cluster
 - You must have MatLab installed INCLUDING the MatLab Parallel Computing Toolbox
-- You must haev downloaded and configured the MHGCP Cluster Plugins. See: [https://github.com/cmholder/MHGCP/tree/main/MatLab]
+- You must have downloaded and configured the MHGCP Cluster Plugins. See: [https://github.com/cmholder/MHGCP/tree/main/MatLab]
 
 ## Job Submission Template
 Download the run_serial_job.m file from [https://github.com/cmholder/MHGCP/blob/main/MatLab/run_serial_job.m] and save it to your local computer.  This will be your template for job submission.
 
 ## Running a job
-1. Once you are ready to submit your MatLab scipt to the Taco cluster you will need to make sure all your chages are saved.
+1. Once you are ready to submit your MatLab scipt to the Taco cluster you will need to make sure all your changes are saved.
 2. Make a copy of the run_serial_job.m file for your script
 > [!TIP]
 > It is suggested that you name your script something referential to the MatLab script.  For example, if your script is named "sinewave.m" you would call the job submission script "run_sinewave_job.m"
