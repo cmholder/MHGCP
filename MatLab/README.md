@@ -56,9 +56,9 @@ Open MatLab and browse to that folder, right-click on the clusterConfig.m file a
 
 Follow the instructions under the command window screen
 
-
-
 💃 💃 💃voilà💃💃💃
+
+## For instructions on actually running MatLab jobs see the [Running Jobs Tutorial](MatLab/runningmatlabjobs.md).
 
 
 
