@@ -5,7 +5,7 @@
 - You must be on the BCM campus network, WiFi, or VPN
 - Your lab must have a subscription to the Taco Cluster
 - You must have MatLab installed INCLUDING the MatLab Parallel Computing Toolbox
-- You must haev downloaded and configured the MHGCP Cluster Plugins.  See: [https://github.com/cmholder/MHGCP/blob/main/MatLab/matlabcluster.md]
+- You must haev downloaded and configured the MHGCP Cluster Plugins.  See: [./README.md]
 
 ## Job Submission Template
 Download the run_serial_job.m file from [https://github.com/cmholder/MHGCP/blob/main/MatLab/run_serial_job.m] and save it to your local computer.  This will be your template for job submission.
