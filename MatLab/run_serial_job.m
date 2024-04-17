@@ -10,12 +10,12 @@ c = parcluster('mhgcp R2024a');   %DO NOT CHANGE THIS
  
 
 % Use the AdditionalProperties property of the cluster object to set job specific details:
+c.AdditionalProperties.ntasks = 1;                             % Number of Tasks
 c.AdditionalProperties.NumNodes = 1;                           % Number of nodes requested 
-c.AdditionalProperties.MemUsage = '1G';                         % Memory per Node Units are (K|M|G|T)
-c.AdditionalProperties.ProcsPerNode = 1;                       % Number of processors per node.
-c.AdditionalProperties.QueueName = 'mhgcp';                    % Cluster partition (mhgcp|interactive|short|gpu)
-c.AdditionalProperties.WallTime = '2:00:00';                   % Max wall time DD-HH:MM:SS
-
+c.AdditionalProperties.NumCPU = 1;                             % Number of CPU per Process
+c.AdditionalProperties.MemPerNode = '1G';                      % Memory per Node Units are (K|M|G|T)
+c.AdditionalProperties.Partition = 'mhgcp';                    % Cluster partition (mhgcp|interactive|short|gpu)
+c.AdditionalProperties.WallTime = '00-0:10:00';                   % Max wall time DD-HH:MM:SS
 
 
  
@@ -24,7 +24,7 @@ c.AdditionalProperties.WallTime = '2:00:00';                   % Max wall time D
 %        c.AdditionalProperties.AdditionalSubmitArgs = '--job-name=xxx';
 %    NOTE:  if --job-name is not set here then Matlab assigns the job name itself as "JobN" where
 %    N is determined by Matlab.
-c.AdditionalProperties.AdditionalSubmitArgs = '';
+c.AdditionalProperties.AdditionalSubmitArgs = '--job-name=MatLabJob';
 
 % Before starting the job, start a job timer to see how long the job runs:
 
@@ -32,11 +32,11 @@ tic
 
  
 
-% Below, submit a batch job that calls the 'myscript.m' script.
+% Below, submit a batch job that calls the 'mywave.m' script.
 % Also set the parameter AutoAddClientPath to false so that Matlab won't complain when paths on 
 % your desktop don't exist on the cluster compute nodes (this is expected and can be ignored).
 
-myjob = batch(c,'myscript','AutoAddClientPath',false);
+myjob = batch(c,'mywave','AutoAddClientPath',false);
 
  
 
