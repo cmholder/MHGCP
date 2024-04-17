@@ -58,7 +58,7 @@ Follow the instructions under the command window screen
 
 💃 💃 💃voilà💃💃💃
 
-## For instructions on actually running MatLab jobs see the [Running Jobs Tutorial](MatLab/runningmatlabjobs.md).
+## For instructions on actually running MatLab jobs see the [Running Jobs Tutorial](./runningmatlabjobs.md).
 
 
 
