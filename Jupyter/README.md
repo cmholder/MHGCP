@@ -1,15 +1,10 @@
 # Jupyter Notebooks on MHGCP Cluster 
 
- 
+Add the [run_jupyter.sbatch](https://github.com/cmholder/MHGCP/blob/main/Jupyter/run_jupyter.sbatch) file to your home directory
 
-Copy and paste the below script text into a file called “run_jupyter.sh” 
+Edit the file to include your proper paths to the various files.
+> [!WARNING]
+> Do NOT change the random port range.  This will lead to an unstable connection.
 
-Make the file executable: `chmod +x run_jupyter.sh`
-
-Edit the file to include your proper paths to the various files. 
-
-
-
-<full path to your home dir>/.local/bin/jupyter notebook --no-browser --port=$ipnport --ip=$ipnip 
-
- 
+Use sbatch to submit the script to the job scheduler
+`sbatch ~/run_jupyter.sbatch`
